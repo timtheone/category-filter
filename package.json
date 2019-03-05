@@ -1,0 +1,33 @@
+{
+    "name": "category_filter",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "build-dev": "webpack --mode=development",
+        "build": "webpack --mode=production",
+        "watch-dev": "webpack --mode=development -w",
+        "watch": "webpack --mode=production -w"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/core": "^7.3.4",
+        "lodash": "^4.17.11",
+        "node-sass": "^4.11.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.4.10",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.5",
+        "babel-preset-env": "^1.7.0",
+        "css-loader": "^2.1.0",
+        "mini-css-extract-plugin": "^0.5.0",
+        "postcss-load-config": "^2.0.0",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.2.3"
+    }
+}
