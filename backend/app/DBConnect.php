@@ -1,6 +1,6 @@
 <?php
 namespace App;
-define('DB_PATH', $_SERVER['DOCUMENT_ROOT'] . '/php/db/categories');
+define('DB_PATH', $_SERVER['DOCUMENT_ROOT'] . '/backend/db/categories');
 
 class DBConnect {
     /**
