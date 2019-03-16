@@ -1,0 +1,20 @@
+$body-wrapper-padding: em(20) em(10);
+$filter-wrapper-margin: 0 auto;
+$filter-wrapper-min-width: em(250);
+$filter-wrapper-max-width: em(400);
+
+body {
+    margin: 0;
+}
+
+.body-wrapper {
+    padding: $body-wrapper-padding;
+    background-color: $color6;
+    .filter-wrapper {
+        background-color: $color6;
+        margin: 0 auto;
+        min-width: $filter-wrapper-min-width;
+        max-width: $filter-wrapper-max-width;
+        box-shadow: $box-shadow-main;
+    }
+}

@@ -1,0 +1,24 @@
+$btn-filter-fs: em(12);
+$btn-filter-letter-spacing: em(1.5);
+$btn-filter-apply-letter-opacity: 0.9;
+$btn-filter-cancel-letter-opacity: 0.7;
+
+.btn__filter {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: $color1;
+    font-family: $font2;
+    font-size: $btn-filter-fs;
+}
+
+#data-container__list__button--apply {
+    letter-spacing: $btn-filter-letter-spacing;
+    opacity: $btn-filter-apply-letter-opacity;
+}
+
+#data-container__list__button--cancel {
+    letter-spacing: $btn-filter-letter-spacing;
+    opacity: $btn-filter-cancel-letter-opacity;
+    font-weight: 100;
+}

@@ -1,3 +1,11 @@
-body {
-    background-color: green;
-}
+@import "config/config";
+@import "config/functions";
+@import "config/global_variables";
+@import "typography/config";
+@import "layout/base_layout";
+@import "elements/forms/search-form";
+@import "elements/components/data-list";
+@import "elements/components/selection-result";
+@import "elements/buttons/filter_buttons";
+@import "elements/misc/checkboxes";
+@import "elements/misc/font-awesome-icons";

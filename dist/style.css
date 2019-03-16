@@ -1,3 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Roboto:100,300,400);
+ul {
+  list-style-type: none;
+  margin: 0; }
+
 body {
-  background-color: green; }
+  font-family: "Lato", sans-serif; }
+
+li {
+  font-size: 0.875em; }
+
+body {
+  margin: 0; }
+
+.body-wrapper {
+  padding: 1.25em 0.625em;
+  background-color: #eff1f1; }
+  .body-wrapper .filter-wrapper {
+    background-color: #eff1f1;
+    margin: 0 auto;
+    min-width: 15.625em;
+    max-width: 25em;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.13); }
+
+.form-group {
+  margin-bottom: 0.125em;
+  background-color: #ffffff; }
+  .form-group__form {
+    display: flex; }
+    .form-group__form__search-icon {
+      width: 13%; }
+      .form-group__form__search-icon i.fa-search {
+        padding: 1.0625em 1.25em; }
+    .form-group__form__input-field {
+      width: 87%;
+      height: 48px;
+      border: none;
+      outline: none; }
+
+.data-container {
+  background-color: #ffffff;
+  min-height: 29.375em;
+  padding: 1.5625em 0 2.5em;
+  overflow: hidden;
+  position: relative; }
+  .data-container__list {
+    padding-left: 1.1875em; }
+  .data-container__controls {
+    display: flex;
+    justify-content: space-between;
+    background-color: #49ad63;
+    padding: 0.9375em 1.25em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 22.5em;
+    transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+    .data-container__controls--hidden {
+      visibility: hidden;
+      -webkit-transform: translateY(2.9375em);
+              transform: translateY(2.9375em);
+      transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .data-container .child-categories {
+    transition-duration: 0.3s; }
+  .data-container .data-container__list__parent-category {
+    overflow-y: hidden;
+    transition: max-height 0.3s ease-out; }
+  .data-container .hide-list {
+    -webkit-transform: translateX(-50em);
+            transform: translateX(-50em);
+    transition-duration: 0.9s; }
+  .data-container .short-list {
+    max-height: 20px !important;
+    transition: max-height 0.3s ease-out; }
+  .data-container li {
+    padding-bottom: 0.3125em; }
+  .data-container ul {
+    padding-top: 0.3125em; }
+
+.selection-container__heading {
+  text-align: center; }
+
+.selection-container__list {
+  display: flex;
+  flex-flow: wrap;
+  margin: 1.25em auto 0;
+  max-width: 25em; }
+  .selection-container__list__results {
+    opacity: 0.8;
+    background-color: #ffffff;
+    padding: 0.125em 8px;
+    border-radius: 0.6875em;
+    color: #3c3c3c;
+    margin: 0.1875em 0.25em;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.13);
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875em; }
+
+.btn__filter {
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75em; }
+
+#data-container__list__button--apply {
+  letter-spacing: 0.09375em;
+  opacity: 0.9; }
+
+#data-container__list__button--cancel {
+  letter-spacing: 0.09375em;
+  opacity: 0.7;
+  font-weight: 100; }
+
+label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+input[type="checkbox"].css-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+input[type="checkbox"].css-checkbox + label.css-label {
+  padding-left: 25px;
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer; }
+
+input[type="checkbox"].css-checkbox:checked + label.css-label {
+  background-position: 0 -15px; }
+
+.lite-gray-check {
+  background-image: url(http://csscheckbox.com/checkboxes/lite-gray-check.png); }
+
+.lite-x-gray {
+  background-image: url(http://csscheckbox.com/checkboxes/lite-x-gray.png); }
+
+.css-label {
+  margin-bottom: 3px; }
+
+.fas {
+  color: #656565; }
+
+.data-container .fas {
+  margin-right: 10px; }
+
+.data-container .collapse-arrow {
+  transition-duration: 0.2s;
+  position: absolute;
+  opacity: 0.5;
+  font-size: 16px;
+  margin: 2px 0px 0px 6px; }
+
+.data-container .show-list-arrow {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  transition-duration: 0.2s; }
+
+.data-container .apply-icon {
+  color: #ffffff; }
 

@@ -1,0 +1,25 @@
+$search-form-group-margin-bottom: em(2);
+$search-input-field-width: 87%;
+$search-input-field-height: 48px;
+$search-input-field-icon-padding: em(17) em(20);
+
+.form-group {
+    margin-bottom: $search-form-group-margin-bottom;
+    background-color: $color1;
+    &__form {
+        display: flex;
+        &__search-icon {
+            width: 100% - $search-input-field-width;
+            i.fa-search {
+                padding: $search-input-field-icon-padding;
+            }
+        }
+
+        &__input-field {
+            width: $search-input-field-width;
+            height: $search-input-field-height;
+            border: none;
+            outline: none;
+        }
+    }
+}

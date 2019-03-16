@@ -2,10 +2,15 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: ["./src/index.js", "@babel/polyfill"],
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist")
+    },
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        compress: true,
+        port: 9000
     },
     module: {
         rules: [
