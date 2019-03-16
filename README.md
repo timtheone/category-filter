@@ -8,4 +8,4 @@
 ### Instructions
 
 - npm install
-- To run the application, you should run the server: php -S localhost:8000  ( Port 8000 is very important)
+- To run the application, you should run the server: `php -S localhost:8000`  ( Port 8000 is very important)
